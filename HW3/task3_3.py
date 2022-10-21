@@ -29,9 +29,9 @@ def min_num(b):
 
 
 list1 = [1.1, 1.2, 3.1, 5, 10.01]
-result = max_num(list1) - min_num(list1)
+result = (max_num(list1) - min_num(list1))%1
 
-print(result%100)
+print(round(result, 2))
 
 
 
