@@ -10,4 +10,4 @@ for i in range (i, num+1):
     if t == 0:
         nat.append(i)
 
-print("Simple multipliers of number ",num, "is: ", nat )
+print("Simple multipliers of number",num, "is: ", nat )
