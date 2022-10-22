@@ -11,7 +11,14 @@ def er(num):
     else:
         return 0
 
+def calc():
+    k = 1
+    x = 0
+    for k in range(1, 300):
+        x = x+4*((-1)**(k+1))/(2*k-1)
+    return x
 
+d = input('Input d: ')
 
 pi = calc() 
 print (pi, er(d))
