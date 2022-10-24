@@ -21,5 +21,5 @@ def calc():     # вычисление числа π
 d = input('Input d: ')
 
 pi = calc() 
-print (pi, er(d))
+print(round(pi, er(d)))
 
