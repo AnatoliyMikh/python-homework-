@@ -6,9 +6,14 @@
 
 import random
 
-i=0
+def write_file(mn):
+    f = open('task4_4_1.txt','w')
+    f.write(mn)
+    f.close()
+
 k = int(input('input k:'))
 sp = list()
+i=0
 while i < 20:
     t = int(random.uniform(0,100)) 
     sp.append(t)
@@ -19,14 +24,13 @@ s = str(f'{random.choice(sp)}*x^{k}+')
 
 p = k
 j = 0
-while j < p:
-    if k > 0:
-        s += str(f'{random.choice(sp)}x^{k-1}+')
-        j += 1
-        k -= 1
-    else:
-        s += str(f'{random.choice(sp)}=0')
+while j < p-1:
+    s += str(f'{random.choice(sp)}x^{k-1}+')
+    j += 1
+    k -= 1
+    
+s += str(f'{random.choice(sp)}=0')
 
-# s = s.rstrip(s[-1])+' = 0'
+print(s)                                # проверка полученного многочлена
+write_file(s)
 
-print(s)
