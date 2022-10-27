@@ -5,6 +5,9 @@
 
 # b) Подумайте как наделить бота ""интеллектом""
 
+from random import randint
+
+
 print("who goes first?")
 def bot_step():
     step = randint(1,28)
